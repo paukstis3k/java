@@ -1,0 +1,213 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    padding: 32px;
+}
+
+h4,
+h5 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+h4 {
+    color: #FF3998;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    margin-bottom: 40px;
+}
+
+.intro a,
+.featured a {
+    border: 2px solid orange ;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 18px 50px;
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+}
+
+.intro p {
+    margin-bottom: 30px;
+}
+
+.intro a {
+    margin-bottom: 40px;
+}
+
+.color {
+    background-image: url("/background.svg");
+    background-repeat: no-repeat;
+    padding: 60px 0 16px ;
+}
+
+.vector {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    width: 33%;
+}
+
+
+
+.icons img {
+    height: auto;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.burger {
+    height: 20px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.featured > h1 {
+    font-size: 56px;
+}
+
+.intro {
+    position: relative;
+}
+
+.purple-hero {
+    background-image: url("/purple-hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 0px;
+}
+
+.featured {
+    position: relative;
+}
+
+.green-hero {
+    background-image: url("/green-hero.svg");
+    background-size: cover;
+    height: 450px;
+    width: 206px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    z-index: -1;
+}
+
+footer nav  {
+
+}
+
+.footer-icons a {
+    margin-right: 8px;
+}
+
+.footer-icons a img {
+    margin-top: 10px;
+
+}
+
+nav h5,
+nav li a,
+footer p {
+    color: #555555;
+}
+
+footer span {
+    color: #999999;
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll {
+    background-color: #EEEEEE;
+    overflow-x:scroll;
+}
+
+.card-footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+}
+
+.card-footer-wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-footer-wrapper  li {
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.iconsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 10px;
+    grid-auto-rows: auto;
+}
+
+.small-icon img {
+    height: 30px;
+}
