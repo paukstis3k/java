@@ -1,12 +1,36 @@
+// Atmintine
+
+// console.log - debugging
+
+// kintamieji
+// let ir const deklaravimas
+
+// narsykles funkcijos
+// prompt, alert
+
+// duomenu tipai
+// string, number, boolean, null, underfined
+
+// operatoriai
+// ==, +, -, *, /, >, <, **, !==, >=, <=, %
+
+// if () {}, else if () {}, else {}
+
+// funkcion
+
+//  funkcija pasiimti elementa
+// const element = document.querySelector(".query")
+
+// elemento parametrai
+// element.innerText
+// element.className
+
 // let birthdate - 1995;
 // let thisyear - 2022;
-
-
 
 // let sakinys = thisyear - birthdate
 
 // alert{yourage};
-
 
 // alertas su vardu prideta prie pavardes
 
@@ -25,10 +49,7 @@
 // let svoris = prompt ("Koks jusu svoris?");
 // let svorisKg = Number(svoris);
 
-
 // console.log(svorisKg, typeof svorisKg);
-
-
 
 // let svoris = prompt("Koks jusu svoris? (kg)");
 // svoris = Number(svoris);
@@ -40,7 +61,6 @@
 // const BMI = (svoris / ugis ** 2) * daugiklis;
 
 // alert(`Jusu BMI: ${BMI}`);
-
 
 // const currentHours = Number(prompt("kiek dabar valandu?"))
 // const currentMinutes = Number(prompt("kiek dabar minuciu?"))
@@ -55,8 +75,6 @@
 // const minuteDifference = (60 - currentMinutes) * additionalHour * isNotTooLate;
 
 // alert(`Liko: ${hourDifference} val. ${minuteDifference} min.`);
-
-
 
 // const metai = prompt("Kurie dabar metai?");
 
@@ -75,7 +93,6 @@
 // cons model = prompt("Koks modelis?(rasykite metus)");
 // const make = prompt("kokia marke?(ferrari, golfas)");
 // const mileage = prompt("kokia rida?(kiek km nuvaziuota?");
-
 
 // if (colour === "red") {
 //     // yes
@@ -99,7 +116,6 @@
 //     } else {}
 // }
 
-
 // const svoris = Number(prompt("Koks Jusu svoris (kg?)"));
 // const ugis = Number(prompt("Koks Jusu ugis (m)?"))**2;
 
@@ -115,8 +131,6 @@
 //     alert("Obesity (Class I)");
 // } else if
 
-
-
 // const gender = prompt("Kokia jusu lytis? ( vyras . mteris)");
 // const weight = Number(prompt("Koks jusu svoris? ( kg )"));
 // const height = Number(prompt("Koks jusu ugis? ( cm )"));
@@ -128,7 +142,7 @@
 // if (gender === "vyras") {
 //     BMR = (66.5 + (13.75 * weight) + (5.003 + height) - (6.75 * age))
 //     console.log("vyras")
-// } 
+// }
 // else {
 //     BMR = (655.1 + (9.563 * weight) + (1.850 + height) - (4.676 * age))
 //     console.log("moteris")
@@ -152,10 +166,201 @@
 //     alert(BMR = 1.9)
 // }
 
-
-
-
-
-
 // const answer = prompt("Kazkoks klausimas (y/n")
 
+// const cssSelector = "#some-element";
+// const element = document.querySelector(cssSelector);
+
+// element.className = "element-style";
+// element.className += "active";
+// console.log(element.className);
+
+// const heading = document.querySelector("#my-element > h1");
+// const paragraph = document.querySelector("#my-element > p");
+
+// console.log(heading);
+// console.log(paragraph);
+
+// const heading = document.querySelector("#my-element h1");
+
+// let text = heading.innerText;
+// heading.innerText = "Ivyko klaida!!";
+// console.log(heading.innerText);
+
+// const button = document.querySelector("#my-button");
+
+// let i = 0;
+
+// function yourFunction() {
+//     i++;
+//     button.innerText = i;
+// }
+
+// const DROPDOWN_ACTIVE = "dropdown-menu active";
+// const DROPDOWN_HIDDEN = "dropdown-menu";
+
+// const dropdownElement = document.querySelector(`#dropdown .${DROPDOWN_HIDDEN}`);
+
+// function toggle() {
+//     console.log(dropdownElement.innerText);
+//     if (dropdownElement.className === DORPDOWN_ACTIVE) {
+//     dropdownElement.className = DROPDOWN_HIDDEN;
+//     } else {
+//         dropdownElement.className = DORPDOWN_ACTIVE;
+//     }
+
+// }
+
+// const bodyElement = document.querySelector("body");
+
+// function changeMode() {
+//     if (className === "light") {
+//         bodyElement.className = "dark";
+//     } else {
+//         bodyElement.className = "light";
+//     }
+// }
+
+// 1. salyga - jeigu sveisus fonas, tada fonas pasikeicia i tamsu
+// sviesus fonas yra class-"light"
+// kad pasikeistu i tamsu body klase turi pasikeisti i class="dark"
+
+// 2. salyga - jeigu tamsus fonas, pasikeicia i sviesu
+// tamsus fonas yra class="dark"
+//  Kad pasikeistu i sviesu body klase turi pasikeisti
+
+// const height = 180;
+// const weight = 90;
+// // kadangi mes kai kurias reikšmes gauname iš inputų, jos gali būti neteisingos, dėl to turime jas patikrinti.
+// // BOOLEAN
+// const isHeightValid = Number(height) > 0; // tikra verte // true jei geras skaičius ir false jei 0 arba NaN
+// const isWeightValid = Number(weight) > 0; // tikra verte // true jei geras skaičius ir false jei 0 arba NaN
+// if (isHeightValid) {
+//  if (isWeightValid) {
+//  // A.
+//  // mūsų success path
+//  } else {
+//  // B.
+//  // svoris nevalidus
+//  }
+// } else {
+//  // C.
+//  // aukštis nevalidus
+//  if (!isWeightValid) {
+//  // B.
+//  // svoris nevalidus
+//  }
+// }
+// // Kad naudotis AND (&&) operatorium, abidvi sąlygos turi būti įgyvendintos.
+// if (isHeightValid && isWeightValid) {
+//  // A.
+//  // Success path
+//  console.log(true && true);
+// } else {
+//  if (!isHeightValid) {
+//  // Neteisingas Svoris
+//  // B.
+//  // Klaida prie svorio inputo
+//  }
+//  // dėl ko čia nėra else?
+//  if (!isWeightValid) {
+//  // Neteisingas aukštis
+//  // C.
+//  // Klaida prie aukščio inputo
+//  }
+// }
+// // // Jei bent viena sąlyga yra įgyvendinta, jis veiks.
+// if (!isHeightValid || !isWeightValid) {
+//  if (!isHeightValid) {
+//  // Neteisingas Svoris
+//  // B.
+//  // Klaida prie svorio inputo
+//  }
+//  // dėl ko čia nėra else?
+//  if (!isWeightValid) {
+//  // Neteisingas aukštis
+//  // C.
+//  // Klaida prie aukščio inputo
+//  }
+// } else {
+//  // A.
+//  // Success path
+//  console.log(true && true);
+// }
+// // _ !isHeightValid || !isWeightValid yra priešingas isHeightValid && isWeightValid
+// console.log(
+//  !(isHeightValid && isWeightValid) === !isHeightValid || !isWeightValid
+// );
+// // 2 operatoriai:
+// // and - && IR
+// // or - || ARBA
+
+// 2. Sukurti BMR kalkuliatorių
+// For men: BMR = 66.5 + (13.75 * weight in kg) + (5.003 * height in cm) - (6.75 * age)
+// For women: BMR = 655.1 + (9.563 * weight in kg) + (1.850 * height in cm) - (4.676 * age)
+
+// To determine your total daily calorie needs, multiply your BMR by the appropriate activity factor, as follows:
+// Sedentary (little or no exercise): calories = BMR × 1.2;
+// Lightly active (light exercise/sports 1-3 days/week): calories = BMR × 1.375;
+// Moderately active (moderate exercise/sports 3-5 days/week): calories = BMR × 1.55;
+// Very active (hard exercise/sports 6-7 days a week): calories = BMR × 1.725; and
+// If you are extra active (very hard exercise/sports & a physical job): calories = BMR × 1.9.
+// // suvedami atsakymai ar esam vyras/moteris, svoris aukštis ir amžius.
+// // atsakomas koks mūsų aktyvumo lygis
+// // atsakomas kiek kalorijų mums reikia per dieną
+
+function calculateBMR() {
+  // Reikia duomenu Ugis, Svoris, Amzius, Lytis, Aktyvumas.
+  // Reikia pasiimti iboutus ir issaugoti juos kaip kintamuosius
+  // documento
+  // document.querySelector("#height");
+  const heightEl = document.querySelector("#height");
+  console.log(heightEl);
+
+  const weightEl = document.querySelector("#weight");
+  console.log(weightEl);
+
+  const ageEl = document.querySelector("#age");
+  console.log(ageEl);
+
+  const height = Number(heightEl.value);
+  console.log(height);
+
+  const weight = Number(weightEl.value);
+  console.log(weight);
+
+  const age = Number(ageEl.value);
+  console.log(age);
+
+  //   console.log(document.querySelector('input[name="gender"]:checked'));
+  //   const gender = document.querySelector('input[name="gender"]:checked').value;
+
+  const genderEl = document.querySelector('input[name="gender"]:checked');
+
+  let gender;
+
+  if (genderEl) {
+    gender = genderEl.value;
+    console.log(gender);
+  }
+
+  const activityEl = document.querySelector('input[name="activity"]:checked');
+  let activity;
+
+  if (activityEl) {
+    // alert("iveskite aktyvuma");
+    activity = activityEl.value;
+    console.log(activity);
+  }
+
+  const isHeightValid = height > 0;
+  const isWeightValid = weight > 0;
+  const isAgeValid = age > 0;
+  const isGenderValid = "man" === gender || "woman" === gender;
+  
+  console.log(isGenderValid);
+
+
+  const isActivityValid = "sedentary" === activity || "light" === activity || "moderately" === activity;
+  console.log(isActivityValid)
+}
