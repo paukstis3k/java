@@ -388,128 +388,128 @@
  *
  */
 
-const displayElement = document.querySelector("#display");
-let temporaryValue;
-let operationType;
+// const displayElement = document.querySelector("#display");
+// let temporaryValue;
+// let operationType;
 
-function call1() {
-  const value = 1;
-  displayElement.innerText += value;
-}
+// function call1() {
+//   const value = 1;
+//   displayElement.innerText += value;
+// }
 
-function call2() {
-  const value = 2;
-  displayElement.innerText += value;
-}
+// function call2() {
+//   const value = 2;
+//   displayElement.innerText += value;
+// }
 
-function call3() {
-  const value = 3;
-  displayElement.innerText += value;
-}
+// function call3() {
+//   const value = 3;
+//   displayElement.innerText += value;
+// }
 
-function call4() {
-  const value = 4;
-  displayElement.innerText += value;
-}
+// function call4() {
+//   const value = 4;
+//   displayElement.innerText += value;
+// }
 
-function call5() {
-  const value = 5;
-  displayElement.innerText += value;
-}
+// function call5() {
+//   const value = 5;
+//   displayElement.innerText += value;
+// }
 
-function call6() {
-  const value = 6;
-  displayElement.innerText += value;
-}
+// function call6() {
+//   const value = 6;
+//   displayElement.innerText += value;
+// }
 
-function call7() {
-  const value = 7;
-  displayElement.innerText += value;
-}
+// function call7() {
+//   const value = 7;
+//   displayElement.innerText += value;
+// }
 
-function call8() {
-  const value = 8;
-  displayElement.innerText += value;
-}
+// function call8() {
+//   const value = 8;
+//   displayElement.innerText += value;
+// }
 
-function call9() {
-  const value = 9;
-  displayElement.innerText += value;
-}
+// function call9() {
+//   const value = 9;
+//   displayElement.innerText += value;
+// }
 
-function call0() {
-  const value = 0;
-  displayElement.innerText += value;
-}
+// function call0() {
+//   const value = 0;
+//   displayElement.innerText += value;
+// }
 
-function multiply() {
-  if (
-    typeof temporaryValue === "number" &&
-    typeof operationType !== "underfined"
-  ) {
-    let result;
+// function multiply() {
+//   if (
+//     typeof temporaryValue === "number" &&
+//     typeof operationType !== "underfined"
+//   ) {
+//     let result;
 
-    if (operationType === "multiply") {
-      result = temporaryValue * Number(displayElement.innerText);
-    } else if (operationType === "divide") {
-      result = temporaryValue / Number(displayElement.innerText);
-      console.log(displayElement.innerText, temporaryValue);
-    } else if (operationType === "add") {
-      result = temporaryValue + Number(displayElement.innerText);
-    } else if (operationType === "subtract") {
-      result = temporaryValue - Number(displayElement.innerText);
-    }
-    temporaryValue = result;
-  } else {
-    temporaryValue = Number(displayElement.innerText);
-  }
-  displayElement.innerText = "";
-  operationType = "multiply";
-}
+//     if (operationType === "multiply") {
+//       result = temporaryValue * Number(displayElement.innerText);
+//     } else if (operationType === "divide") {
+//       result = temporaryValue / Number(displayElement.innerText);
+//       console.log(displayElement.innerText, temporaryValue);
+//     } else if (operationType === "add") {
+//       result = temporaryValue + Number(displayElement.innerText);
+//     } else if (operationType === "subtract") {
+//       result = temporaryValue - Number(displayElement.innerText);
+//     }
+//     temporaryValue = result;
+//   } else {
+//     temporaryValue = Number(displayElement.innerText);
+//   }
+//   displayElement.innerText = "";
+//   operationType = "multiply";
+// }
 
-function divide() {
-  temporaryValue = Number(displayElement.innerText);
-  displayElement.innerText = "";
-  operationType = "divide";
-}
+// function divide() {
+//   temporaryValue = Number(displayElement.innerText);
+//   displayElement.innerText = "";
+//   operationType = "divide";
+// }
 
-function add() {
-  temporaryValue = Number(displayElement.innerText);
-  displayElement.innerText = "";
-  operationType = "add";
-}
+// function add() {
+//   temporaryValue = Number(displayElement.innerText);
+//   displayElement.innerText = "";
+//   operationType = "add";
+// }
 
-function subtract() {
-  temporaryValue = Number(displayElement.innerText);
-  displayElement.innerText = "";
-  operationType = "subtract";
-}
+// function subtract() {
+//   temporaryValue = Number(displayElement.innerText);
+//   displayElement.innerText = "";
+//   operationType = "subtract";
+// }
 
-function calculateResult() {
-  let result;
+// function calculateResult() {
+//   let result;
 
-  if (operationType === "multiply") {
-    result = temporaryValue * Number(displayElement.innerText);
-  } else if (operationType === "divide") {
-    result = temporaryValue / Number(displayElement.innerText);
-    console.log(displayElement.innerText, temporaryValue);
-  } else if (operationType === "add") {
-    result = temporaryValue + Number(displayElement.innerText);
-  } else if (operationType === "subtract") {
-    result = temporaryValue - Number(displayElement.innerText);
-  }
+//   if (operationType === "multiply") {
+//     result = temporaryValue * Number(displayElement.innerText);
+//   } else if (operationType === "divide") {
+//     result = temporaryValue / Number(displayElement.innerText);
+//     console.log(displayElement.innerText, temporaryValue);
+//   } else if (operationType === "add") {
+//     result = temporaryValue + Number(displayElement.innerText);
+//   } else if (operationType === "subtract") {
+//     result = temporaryValue - Number(displayElement.innerText);
+//   }
 
-  displayElement.innerText = result;
-  temporaryValue = undefined;
-  operationType = undefined;
-}
+//   displayElement.innerText = result;
+//   temporaryValue = undefined;
+//   operationType = undefined;
+// }
 
-function clearResult() {
-  console.log("text");
-  displayElement.innerText = "";
-  temporaryValue = undefined;
-  operationType = undefined;
-}
+// function clearResult() {
+//   console.log("text");
+//   displayElement.innerText = "";
+//   temporaryValue = undefined;
+//   operationType = undefined;
+// }
 
 /**
  *
@@ -548,3 +548,50 @@ function clearResult() {
  *
  * 6. suveikia calculateResult()
  */
+
+
+// new Date().toLocaleString();
+
+
+
+
+
+
+
+// Acceptance Criteria:
+// 1. Show audit log information on the left hand side. It should be empty by default
+// 2. Show 'Help' button on the right bottom corner
+//     a. On button click it should open form dialog
+//     b. Form dialog should be animated on open
+// 3. Create form dialog with 4 inputs:
+//     a. First name (required)
+//     b. Last name (required)
+//     c. Email (required and should be valid email)
+//     d. Complaint (required)
+// 4. Form should be validated before submitting it
+//     a. If form is not valid, then display generic error text and highlight fields that are invalid
+// 5. If form is valid then submit it
+//     a. clear all, if any, errors, clear input values and close dialog
+//     b. fill in audit info fields with user input
+
+
+
+const helpBtn = document.querySelector(".help-btn")
+const helpConst = document.querySelector(".modal")
+const iksiukas = document.querySelector(".exit-btn")
+const errorPop = document.querySelector(".error-message")
+
+
+
+
+
+helpBtn.addEventListener("click",openModal)
+function openModal() {
+    helpConst.style.display = "block"    
+}
+
+
+iksiukas.addEventListener("click",closeModal)
+function closeModal() {
+    helpConst.style.display = "none"
+}

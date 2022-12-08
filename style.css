@@ -33,8 +33,7 @@ p {
     display: flex;            Pasirenka pazymeta selektoriu PAGAL INPUTO NAME
 } */
 
-
-
+/* 
 .container {
     margin: 0 auto;
     max-width: 400px;
@@ -62,4 +61,78 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+} */
+
+body,
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: beige;
+  margin: 20px;
+}
+
+.container {
+
+}
+
+.audit-form > p {
+  margin: 0;
+  padding: 2px;
+}
+
+.submit-btn {
+  padding: 6px 180px;
+  margin-top: 10px;
+}
+
+.help-btn {
+  padding: 8px 10px;
+  float: right;
+}
+
+.help-btn,
+.submit-btn {
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.exit-btn {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: rgb(227, 230, 233);
+  padding: 20px 20px 50px;
+  width: 400px;
+  display: none;
+  
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+label {
+  margin: 0;
+}
+
+textarea {
+  height: 150px;
+}
+
+
+.error-message {
+    color: red;
 }
