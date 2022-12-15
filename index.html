@@ -79,7 +79,7 @@
       </div>
     </div> -->
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="audit-form">
         <p>First Name:</p>
         <p>Last Name:</p>
@@ -118,6 +118,46 @@
       </div>
 
       <button class="help-btn">Help</button>
-    </div>
+    </div> -->
+
+    <header>
+      <span>Budged Tracker</span>
+    </header>
+    <main>
+        <form action="#" method="POST">
+          <div class="modal"></div>
+          <select name="add expense" id="add-expense">
+            <option value="add expense">Add expense</option>
+            <option value="current budget">Current budget</option></select
+          ><br />
+
+          <label for="date">Date:</label><br />
+          <input type="date" name="date" /><br />
+
+          <label for="number">Spent Ammount:</label><br />
+          <input
+            type="number"
+            name="number"
+            placeholder="Spent ammount"
+          /><br />
+
+          <label for="expense type" id="expense-type">Expense Type:</label
+          ><br />
+          <select name="expense type" id="expense type">
+            <option value="groceries">Groceries</option>
+            <option value="utilities">Utilities</option>
+            <option value="Car">Car</option>
+            <option value="leisure">Leisure</option>
+            <option value="clothing">Clothing</option></select
+          ><br />
+
+          <label for="notes">Notes:</label><br />
+          <textarea name="notes" id="notes"></textarea><br />
+
+          <button type="submit">Save Expense</button>
+          </div>
+        </form>
+      
+    </main>
   </body>
 </html>

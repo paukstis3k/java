@@ -63,7 +63,7 @@ p {
     gap: 10px;
 } */
 
-body,
+/* body,
 html {
   font-family: "Courier New", Courier, monospace;
 }
@@ -135,4 +135,53 @@ textarea {
 
 .error-message {
     color: red;
+} */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+}
+
+header {
+  background-color: rgb(122, 120, 197);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+form {
+  background-color: rgb(229, 236, 242);
+  padding: 15px;
+  width: 700px;
+}
+
+main {
+  margin: 15px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+select,
+button,
+textarea {
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  border-radius: 7px;
+  border-color: lightgray;
+  color: gray;
+  margin: 0;
 }

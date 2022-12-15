@@ -576,22 +576,56 @@
 
 
 
-const helpBtn = document.querySelector(".help-btn")
-const helpConst = document.querySelector(".modal")
-const iksiukas = document.querySelector(".exit-btn")
-const errorPop = document.querySelector(".error-message")
+// const helpBtn = document.querySelector(".help-btn")
+// const helpConst = document.querySelector(".modal")
+// const iksiukas = document.querySelector(".exit-btn")
+// const errorPop = document.querySelector(".error-message")
 
 
 
 
 
-helpBtn.addEventListener("click",openModal)
-function openModal() {
-    helpConst.style.display = "block"    
-}
+// helpBtn.addEventListener("click",openModal)
+// function openModal() {
+//     helpConst.style.display = "block"    
+// }
 
 
-iksiukas.addEventListener("click",closeModal)
-function closeModal() {
-    helpConst.style.display = "none"
-}
+// iksiukas.addEventListener("click",closeModal)
+// function closeModal() {
+//     helpConst.style.display = "none"
+// }
+
+
+
+
+
+
+
+
+
+
+
+// document.querySelector("#my-input").addEventListener("input", function (event) {
+//     console.log(event.target.value);
+// });
+
+
+
+
+
+// const result = pureAdd(2,3)
+// console.log(result);
+
+// function Add(a, b) {
+//     return a + b;
+// }
+
+// function getInputValueNumber(input) {
+//     return Number(input.value);
+// }
+
+
+const addExpense = document.querySelector("#add-expense")
+const budgetModal = document.querySelector(".modal")
+
