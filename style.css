@@ -136,7 +136,7 @@ textarea {
 .error-message {
     color: red;
 } */
-
+/* 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -184,4 +184,143 @@ button {
   border-color: lightgray;
   color: gray;
   margin: 0;
+} */
+
+/* * {
+
+  box-sizing: border-box;
+
 }
+
+body {
+
+  margin: 0 100px;
+
+}
+
+.title {
+
+  font-size: 96px;
+
+  line-height: 129px;
+
+}
+
+main {
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+.wrapper {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+.buttons,
+
+.knight-damage {
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+button {
+
+  padding: 14px 57px;
+
+  background-color: #5B2F2F;
+
+  color: white;
+
+  border: none;
+
+}
+
+footer {
+
+  display: none;
+
+} */
+
+
+
+
+
+
+/* body {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+form {
+  flex-direction: column;
+  display: flex;
+}
+
+.right-side {
+  background-color: gray;
+  width: 400px;
+}
+
+label,
+button {
+  margin: 6px 0;
+}
+ */
+
+
+
+
+
+ 
+
+
+ /* body {
+  background-color: beige;
+ }
+
+ .container {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+ }
+
+ .wrapper {
+  padding: 10px;
+ }
+ 
+ button {
+   margin: 10px 1px;
+   border-radius: 4px;
+   padding: 4px;
+   border: 1px solid grey;
+}
+
+
+
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border-color: red;
+} */
