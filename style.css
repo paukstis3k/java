@@ -1,64 +1,73 @@
-
-:root {
-    --modeColor: #1e90ff;
-    --spaceSmall: 0.375rem;
-    --spaceBig: 1rem;
+body,
+html {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.test {
-    color: var(--modeColor);   
+body {
+  background-color: beige;
+  margin: 20px;
 }
-
-
-.test3 {
-    background-color: var(--modeColor);
-}
-
-body.light {
-    --color: #000;
-    --bgColor: #fff;
-}
-
-body.dark {
-    --color:#fff;
-    --bgColor: #000;
-}
-
-p {
-    color: var(--color);
-    background-color: var(--bgColor);
-} */
-
-input[name="test"]:checked {
-    display: flex;            
-} 
-
 
 .container {
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-.display {
-    border: 2px solid black;
-    min-height: 40px;
-}
-
-.numbers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    flex: 1;
 
 }
 
-.controls {
-    display: flex;
-    gap: 10px;
+.audit-form > p {
+  margin: 0;
+  padding: 2px;
 }
 
-.operators {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.submit-btn {
+  padding: 6px 180px;
+  margin-top: 10px;
+}
+
+.help-btn {
+  padding: 8px 10px;
+  float: right;
+}
+
+.help-btn,
+.submit-btn {
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.exit-btn {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: rgb(227, 230, 233);
+  padding: 20px 20px 50px;
+  width: 400px;
+  display: none;
+  
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+label {
+  margin: 0;
+}
+
+textarea {
+  height: 150px;
+}
+
+
+.error-message {
+    color: red;
 }
