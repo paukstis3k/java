@@ -1,48 +1,23 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: beige;
+  margin: 20px;
 }
 
-header {
-  background-color: rgb(122, 120, 197);
-  color: white;
-  padding: 5px;
-  text-align: center;
-  font-size: 25px;
+.container {
+  display: flex;
+  gap: 30px;
 }
 
 form {
-  background-color: rgb(229, 236, 242);
-  padding: 15px;
-  width: 700px;
+  flex-direction: column;
+  display: flex;
 }
 
-main {
-  margin: 15px;
+.right-side {
+  background-color: gray;
+  width: 400px;
 }
 
-input,
-textarea,
-select {
-  width: 100%;
-}
-
-textarea {
-  resize: vertical;
-}
-
-input,
-select,
-button,
-textarea {
-  margin: 10px 0;
-}
-
+label,
 button {
-  width: 100%;
-  border-radius: 7px;
-  border-color: lightgray;
-  color: gray;
-  margin: 0;
-} */
+  margin: 6px 0;
+}
