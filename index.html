@@ -12,107 +12,47 @@
   
   <body>
   
-      <header>
-  
-          <h1 class="title">Dragon killer 3</h1>
-  
-      </header>
-  
-      <main>
-  
-          <div class="container-left">
-  
-              <div class="wrapper">
-  
-                  <h2>Dragon</h2>
-  
-              <p>Health: <span id="dragon-health"></span></p>
-  
-              </div>
-  
-              
-  
-              <img src="./dragon 1.svg" alt="Dragon">
-  
-              <p>Dragon will attack you every turn! What are you going to do?</p>
-  
-              <div class="dragon-damage">
-  
-                  <p>Dragon deals 1-20 damage every turn.</p>
-  
-                  <p>Dragon has 33% chance of taking no damage from you.</p>
-  
-              </div>
-  
-          </div>
-  
-          <div class="container-right">
-  
-              <div class="wrapper">
-  
-                  <h2>Knight</h2>
-  
-              <p>Health: <span id="knight-health"></span></p>
-  
-              </div>
-  
-              
-  
-              <img src="./knight 1.svg" alt="Dragon">
-  
-              <div class="buttons">
-  
-                  <button id="attack-btn">Attack</button>
-  
-                  <button id="defend-btn">Defend</button>
-  
-                  <button id="heal-btn">Heal</button>
-  
-              </div>
-  
-              <div class="knight-damage">
-  
-                  <p>You deal 1 - 10 damage.</p>
-  
-                  <p>You take no damage, your next attack deals double damage.</p>
-  
-                  <p>You regain 1-30 health.</p>
-  
-              </div>
-  
-          </div>
-  
-      
-  
-      </main>
-  
-      <footer class="footer">
-  
-          <h2 class="combat-log">Combat log</h2>  
-  
-      </footer> -->
-
-    <div class="container">
-        <div class="left-side">
-          <form action="#">
-            <label for="key">New Key</label>
-            <input id="key" type="text">
-
-            <label for="existing-keys">Existing-keys</label>
-            <select id="existing-keys">
-            <option hidden disabled selected value> Select a Key </option>
-            </select>
-
-            <label for="key-value">Key value</label>
-            <input type="text" name="value" id="value">
-          </form>
-          <button id="submit">Click</button>
-
+   <div class="container">
+      <div class="wrapper">
+        <div class="first-modal">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required /><br />
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" required /><br />
+          <label for="email">Email</label><br />
+          <input type="email" name="email" id="email" required /><br />
         </div>
-        <div class="right-side">
-          
+        <div class="second-modal hidden">
+          <label for="primary-address">Primary-address</label>
+          <input
+            type="text"
+            name="primary-address"
+            id="primary-address"
+            required
+          />
+          <label for="secondary-address">Secondary-address</label>
+          <input type="text" name="secodary-address" id="secondary-address" />
+          <label for="shirt-size">Shirt Size</label>
+          <input type="text" name="shirt-size" id="shirt-size" required />
         </div>
+        <div class="third-modal hidden">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <label for="repeat-password">Repeat password</label>
+          <input
+            type="password"
+            name="password"
+            id="repeat-password"
+            required
+          />
+        </div>
+        <div class="fourth-modal hidden">
+          <textarea id="results" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button id="back-button" class="hidden">Back</button>
+        <button id="continue-button">Continue</button>
       </div>
+    </div>
 
 </body>
 </html>
